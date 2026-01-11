@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Project Gallery - View my work">
+    <title>Portfolio - Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>MyPortfolio</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Project Gallery</h1>
+            <p class="page-subtitle">Explore my latest work and creative projects</p>
+        </div>
+    </section>
+
+    <!-- Image Carousel/Slider -->
+    <section class="carousel-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="prevBtn" aria-label="Previous slide">❮</button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <!-- Slide 1 -->
+                        <div class="carousel-slide active">
+                            <div class="slide-content">
+                                <img src="images/project1.jpg" alt="E-commerce Website" onerror="this.src='images/placeholder.jpg'">
+                                <div class="slide-info">
+                                    <h3>E-commerce Platform</h3>
+                                    <p>Modern online shopping experience with cart functionality</p>
+                                    <span class="slide-tag">Web Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 2 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <img src="images/project2.jpg" alt="Dashboard App" onerror="this.src='images/placeholder.jpg'">
+                                <div class="slide-info">
+                                    <h3>Analytics Dashboard</h3>
+                                    <p>Real-time data visualization and reporting system</p>
+                                    <span class="slide-tag">UI/UX</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 3 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <img src="images/project3.jpg" alt="Mobile App" onerror="this.src='images/placeholder.jpg'">
+                                <div class="slide-info">
+                                    <h3>Mobile App Design</h3>
+                                    <p>Intuitive fitness tracking application</p>
+                                    <span class="slide-tag">App Design</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 4 -->
+                        <div class="carousel-slide">
+                            <div class="slide-content">
+                                <img src="images/project4.jpg" alt="Landing Page" onerror="this.src='images/placeholder.jpg'">
+                                <div class="slide-info">
+                                    <h3>SaaS Landing Page</h3>
+                                    <p>Conversion-focused landing page design</p>
+                                    <span class="slide-tag">Marketing</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" id="nextBtn" aria-label="Next slide">❯</button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators" id="carouselIndicators">
+                    <button class="indicator active" data-slide="0"></button>
+                    <button class="indicator" data-slide="1"></button>
+                    <button class="indicator" data-slide="2"></button>
+                    <button class="indicator" data-slide="3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter & Sort Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">All Projects</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="app">App Design</button>
+                <button class="filter-btn" data-filter="ui">UI/UX</button>
+            </div>
+            
+            <!-- Sort Options -->
+            <div class="sort-options">
+                <label for="sortSelect">Sort by:</label>
+                <select id="sortSelect" class="sort-select">
+                    <option value="default">Default</option>
+                    <option value="name">Name (A-Z)</option>
+                    <option value="date">Newest First</option>
+                </select>
+            </div>
+            
+            <!-- Gallery Grid -->
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery Item 1 -->
+                <div class="gallery-item" data-category="web" data-name="Restaurant Website" data-date="2026-01">
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery1.jpg" alt="Restaurant Website" onerror="this.src='images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant Website</h3>
+                            <p>Modern restaurant booking system</p>
+                            <button class="view-btn" onclick="openModal(0)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 2 -->
+                <div class="gallery-item" data-category="app" data-name="Fitness Tracker" data-date="2025-12">
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery2.jpg" alt="Fitness App" onerror="this.src='images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h3>Fitness Tracker</h3>
+                            <p>Health and workout monitoring app</p>
+                            <button class="view-btn" onclick="openModal(1)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 3 -->
+                <div class="gallery-item" data-category="ui" data-name="Dashboard UI" data-date="2025-11">
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery3.jpg" alt="Dashboard" onerror="this.src='images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h3>Dashboard UI</h3>
+                            <p>Clean admin panel interface</p>
+                            <button class="view-btn" onclick="openModal(2)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 4 -->
+                <div class="gallery-item" data-category="web" data-name="Portfolio Site" data-date="2025-10">
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery4.jpg" alt="Portfolio" onerror="this.src='images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h3>Portfolio Website</h3>
+                            <p>Creative portfolio showcase</p>
+                            <button class="view-btn" onclick="openModal(3)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 5 -->
+                <div class="gallery-item" data-category="app" data-name="Chat Application" data-date="2025-09">
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery5.jpg" alt="Chat App" onerror="this.src='images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h3>Chat Application</h3>
+                            <p>Real-time messaging platform</p>
+                            <button class="view-btn" onclick="openModal(4)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Gallery Item 6 -->
+                <div class="gallery-item" data-category="ui" data-name="Mobile Banking" data-date="2025-08">
+                    <div class="gallery-item-inner">
+                        <img src="images/gallery6.jpg" alt="Banking App" onerror="this.src='images/placeholder.jpg'">
+                        <div class="gallery-overlay">
+                            <h3>Mobile Banking UI</h3>
+                            <p>Secure banking interface</p>
+                            <button class="view-btn" onclick="openModal(5)">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div class="modal" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content loaded here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyPortfolio</h3>
+                    <p>Building the web, one pixel at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub">🐙</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Email">📧</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MyPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

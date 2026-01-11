@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Me - Full Stack Developer">
+    <title>Portfolio - About</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Theme Toggle Button -->
+    <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+        <span class="sun-icon">☀️</span>
+        <span class="moon-icon">🌙</span>
+    </button>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h2>MyPortfolio</h2>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">About Me</h1>
+            <p class="page-subtitle">Get to know more about my journey and expertise</p>
+        </div>
+    </section>
+
+    <!-- About Content -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="image-wrapper">
+                        <img src="images/profile.jpg" alt="Profile Picture" onerror="this.src='images/placeholder.jpg'">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left">
+                    <h2>Hi, I'm a Full Stack Developer</h2>
+                    <p>
+                        I'm passionate about creating beautiful, functional, and user-centered digital experiences. 
+                        With over 3 years of experience in web development, I bring designs to life with clean, 
+                        efficient code.
+                    </p>
+                    <p>
+                        My expertise spans across front-end technologies like HTML, CSS, JavaScript, and modern 
+                        frameworks. I believe in writing code that is not only functional but also maintainable 
+                        and scalable.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <span class="highlight-icon">🎯</span>
+                            <div>
+                                <h4>Mission</h4>
+                                <p>Creating impactful digital solutions</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <span class="highlight-icon">💡</span>
+                            <div>
+                                <h4>Vision</h4>
+                                <p>Innovation through clean code</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Progress Bars -->
+    <section class="skills-progress-section">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            
+            <div class="skills-progress-grid">
+                <div class="skill-progress" data-aos="fade-up">
+                    <div class="skill-header">
+                        <span>HTML5</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-progress" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-header">
+                        <span>CSS3 & Sass</span>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="90"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-progress" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-header">
+                        <span>JavaScript</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-progress" data-aos="fade-up" data-aos-delay="300">
+                    <div class="skill-header">
+                        <span>React</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-progress" data-aos="fade-up" data-aos-delay="400">
+                    <div class="skill-header">
+                        <span>UI/UX Design</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="88"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-progress" data-aos="fade-up" data-aos-delay="500">
+                    <div class="skill-header">
+                        <span>Git & GitHub</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" data-progress="92"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Timeline -->
+    <section class="timeline-section">
+        <div class="container">
+            <h2 class="section-title">Experience & Education</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Present</div>
+                        <h3>Senior Frontend Developer</h3>
+                        <p class="timeline-company">Tech Solutions Inc.</p>
+                        <p>Leading frontend development for enterprise applications using modern web technologies.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2024</div>
+                        <h3>Frontend Developer</h3>
+                        <p class="timeline-company">Digital Agency Ltd.</p>
+                        <p>Developed responsive websites and web applications for various clients.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2020 - 2022</div>
+                        <h3>Junior Web Developer</h3>
+                        <p class="timeline-company">StartUp Co.</p>
+                        <p>Built and maintained company websites and internal tools.</p>
+                    </div>
+                </div>
+                
+                <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2016 - 2020</div>
+                        <h3>Bachelor's in Computer Science</h3>
+                        <p class="timeline-company">Calicut University</p>
+                        <p>Graduated with honors, specializing in web technologies and software engineering.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Let's Work Together</h2>
+                <p>Have a project in mind? Let's discuss how I can help bring your ideas to life.</p>
+                <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MyPortfolio</h3>
+                    <p>Building the web, one pixel at a time.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="GitHub">🐙</a>
+                        <a href="#" aria-label="LinkedIn">💼</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="Email">📧</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 MyPortfolio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
